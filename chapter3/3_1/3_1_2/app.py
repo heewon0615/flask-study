@@ -16,4 +16,4 @@ class User(db.Model):
         return '<User %r>' % self.username
     
 # Flask-Migrate 초기 설정
-migrate = Migrate(app.db)
+migrate = Migrate(app, db)
